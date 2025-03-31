@@ -1,0 +1,7 @@
+@PACKAGE_INIT@
+
+set_and_check(NUMERIC_INCLUDE_DIRS "${PACKAGE_PREFIX_DIR}/include")
+set_and_check(NUMERIC_LIB_DIRS "${PACKAGE_PREFIX_DIR}/lib")
+set_and_check(NUMERIC_LIBRARIES forward_chaining)
+
+check_required_components(forward_chaining)
